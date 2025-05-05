@@ -10,6 +10,7 @@
 [Ll]ogs/
 MemoryCaptures/
 CrashReports/
+
 *.pidb
 *.booproj
 *.unityproj
@@ -20,6 +21,7 @@ CrashReports/
 *.exe
 *.app
 *.zip
+*.resource
 
 # Unity Collab (if not using)
 .collabignore
