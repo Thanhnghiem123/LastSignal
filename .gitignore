@@ -10,6 +10,7 @@
 [Ll]ogs/
 MemoryCaptures/
 CrashReports/
+GameDesktop/
 
 *.pidb
 *.booproj
