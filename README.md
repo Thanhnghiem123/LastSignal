@@ -1,6 +1,6 @@
 # Last Signal
 
-![Last Signal](Assets/ImageGame/Icon.jpg) <!-- Thay link này bằng ảnh minh họa của game -->
+![Last Signal](Assets/ImageGame/Icon.jpg)
 
 ## 🧟‍♂️ Giới thiệu
 **Last Signal** là một trò chơi sinh tồn trong thành phố Zombie góc nhìn thứ nhất, nơi bạn phải chiến đấu với lũ zombie để sống sót. Người chơi sẽ sử dụng các loại vũ khí như súng và kiếm để tiêu diệt zombie, thu thập tài nguyên, và cố gắng sống sót cho đến khi đội cứu hộ đến.
