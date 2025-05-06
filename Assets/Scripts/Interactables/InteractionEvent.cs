@@ -6,19 +6,31 @@ using UnityEngine.Events;
 public class InteractionEvent : MonoBehaviour
 {
     public UnityEvent OnInteract;
-    public PlayerHealth playerHealth;
+    private PlayerHealth playerHealth;
 
-
+    private void Awake()
+    {
+        // Find the GameObject with the "Player" tag and get its PlayerHealth component
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            playerHealth = player.GetComponent<PlayerHealth>();
+        }
+        else
+        {
+            Debug.LogError("Player GameObject with tag 'Player' not found.");
+        }
+    }
 
     public void TryHealAndDestroy(float healAmount)
     {
-        if (playerHealth.Heal(healAmount))
+        if (playerHealth != null && playerHealth.Heal(healAmount))
         {
             DestroyObject();
         }
     }
 
-    private void DestroyObject()
+    public void DestroyObject()
     {
         Destroy(gameObject);
     }
