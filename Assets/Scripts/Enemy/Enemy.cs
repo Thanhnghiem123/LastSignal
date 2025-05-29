@@ -67,8 +67,8 @@ public class Enemy : MonoBehaviour
             {
                 Animator.SetBool("AttackState", true);
                 setSpeedAttack();
-                agent.SetDestination(SoundManager.lastSoundPosition);
-                
+                //agent.SetDestination(SoundManager.lastSoundPosition);
+                Debug.Log("Zombie đang di chuyển đến vị trí âm thanh: " + SoundManager.lastSoundPosition);
                 if (!agent.hasPath)
                 {
                     //Debug.Log("Không tìm thấy đường đi đến đích!");
@@ -119,6 +119,7 @@ public class Enemy : MonoBehaviour
                         {
                             Debug.DrawRay(ray.origin, ray.direction * sightDistance);
                             Animator.SetBool("AttackState", true);
+                            //agent.SetDestination(player.transform.position);
                             return true;
                         }
                     }

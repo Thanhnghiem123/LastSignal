@@ -153,9 +153,13 @@ public class PlayerHealth : MonoBehaviour
     {
         isDead = true;
 
-        // Khóa input
-        if (movementScript != null) movementScript.enabled = false;
-        if (mouseLookScript != null) mouseLookScript.enabled = false;
+        // Tắt tất cả script trên GameObject này và các GameObject con
+        MonoBehaviour[] scripts = GetComponentsInChildren<MonoBehaviour>();
+        foreach (MonoBehaviour script in scripts)
+        {
+           
+                script.enabled = false;
+        }
 
         // Phát âm thanh chết (nếu có)
         if (deathSound != null) deathSound.Play();
@@ -199,7 +203,9 @@ public class PlayerHealth : MonoBehaviour
             blackFadeImage.color = endColor;
         }
 
-        // Chuyển sang scene 0
+        Cursor.lockState = CursorLockMode.None; // Mở khóa con trỏ
+        Cursor.visible = true; // Hiển thị con trỏ
+                               // Chuyển sang scene 0
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 }

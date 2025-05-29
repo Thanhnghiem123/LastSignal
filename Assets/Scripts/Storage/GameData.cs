@@ -15,6 +15,6 @@ public class GameData
         //bulletsIHave = 560;
         //bulletsInTheGun = 40;
         //amountOfBulletsPerLoad = 40;
-        playerPosition = new Vector3(-102.368713f, -24.4370003f, 62.3272438f);
+        playerPosition = new Vector3(-380.369995f, 6.63000011f, 58f);
     }
 }

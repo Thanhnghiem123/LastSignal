@@ -37,8 +37,8 @@ public class AttackState : BaseState
             {
                 // Tính toán hướng đi của zombie về phía người chơi
                 Vector3 directionToPlayer = (enemy.Player.transform.position - enemy.transform.position).normalized;
-                //Quaternion lookRotation = Quaternion.LookRotation(directionToPlayer);
-                //enemy.transform.rotation = Quaternion.Slerp(enemy.transform.rotation, lookRotation, Time.deltaTime * 5f); // Quay mượt mà
+                Quaternion lookRotation = Quaternion.LookRotation(directionToPlayer);
+                enemy.transform.rotation = Quaternion.Slerp(enemy.transform.rotation, lookRotation, Time.deltaTime * 1f); // Quay mượt mà
 
 
                 if (distanceToPlayer <= 2f)
@@ -58,8 +58,9 @@ public class AttackState : BaseState
                     enemy.Animator.SetBool("IsAttacking", false);
                     enemy.Agent.isStopped = false;
                     enemy.Agent.SetDestination(enemy.Player.transform.position);
-                    return;
 
+                    Debug.Log("Zombie đang tấn công người chơi" + enemy.Player.transform.position);
+                    return;
                 }
             }
             else

@@ -100,7 +100,7 @@ public class GameManager : MonoBehaviour
 
     public void ApplyGameData(GameObject player)
     {
-        player.transform.localPosition = gameData.playerPosition;
+        player.transform.position = gameData.playerPosition;
         Debug.Log("Player position set to: " + gameData.playerPosition);
         PlayerController playerController = player.GetComponent<PlayerController>();
         Debug.Log("PlayerController found: " + (playerController != null));

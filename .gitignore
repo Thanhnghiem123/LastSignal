@@ -22,6 +22,7 @@ GameDesktop/
 *.exe
 *.app
 *.zip
+*.rar
 *.resource
 
 # Unity Collab (if not using)

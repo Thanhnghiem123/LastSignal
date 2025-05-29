@@ -47,8 +47,8 @@ public class PlayerController : MonoBehaviour
 
     public void SaveGame()
     {
-            GameManager.Instance.SaveGameState(playerHealth.Health, transform.localPosition);
-            Debug.Log("Game state saved! Position: " + transform.localPosition);
+            GameManager.Instance.SaveGameState(playerHealth.Health, transform.position);
+            Debug.Log("Game state saved! Position: " + transform.position);
         
         Cursor.lockState = CursorLockMode.None; // Unlock the cursor.
         Cursor.visible = true; // Make the cursor visible.

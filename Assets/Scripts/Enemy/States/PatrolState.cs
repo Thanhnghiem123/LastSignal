@@ -34,7 +34,7 @@ public class PatrolState : BaseState
                     waypointIndex++;
                 else
                     waypointIndex = 0; // Khi di chuyen den dich reset lai
-                enemy.Agent.SetDestination(enemy.path.waypoints[waypointIndex].position); // Phuong thuc SetDestination - di chuyen doi tuong den vi tri mong muon
+                //enemy.Agent.SetDestination(enemy.path.waypoints[waypointIndex].position); // Phuong thuc SetDestination - di chuyen doi tuong den vi tri mong muon
                 waitTimer = 0; // reset
             }
         }
