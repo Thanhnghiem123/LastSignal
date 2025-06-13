@@ -138,6 +138,9 @@ Nếu bạn muốn đóng góp cho dự án, hãy làm theo các bước sau:
 ## 📧 Liên hệ
 Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ qua email: **thanhnghiem199@gmail.com**.
 
+## Link cài đặt game Desktop
+https://drive.google.com/drive/folders/15RLplQRgk2iAbmL4mMvZm-UO5xabQCeN?usp=drive_link
+
 ---
 
 ## 🌟 Cảm ơn
